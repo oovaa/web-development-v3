@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #hey {
+        /* the most specific*/
+        color: #000;
+      }
+      .check {
+        /* <!-- the class is more specific that the tag selector --> */
+        color: green;
+      }
+      .check {
+        color: red !important; /* the most specific after inline styles*/
+      }
+    </style>
+    <div class="check" id="hey">hey man</div>
+  </body>
+</html>
